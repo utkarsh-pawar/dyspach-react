@@ -78,7 +78,7 @@ const TaskForm = ({ onAdd, editingTask }) => {
       </FormControl>
       <Center>
         <Button onClick={onSubmit} mt="5" colorScheme="blue">
-          Add Task
+          {editingTask ? "Edit Task" : "Add Task"}
         </Button>
       </Center>
     </div>
